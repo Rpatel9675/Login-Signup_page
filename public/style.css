@@ -1,0 +1,192 @@
+.index_page {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./pexels-photo-3747299.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+}
+
+#nav_bar {
+    display: flex;
+    justify-content: end;
+    width: 80%;
+}
+.home:hover,
+.about_us:hover,
+.services:hover,
+.contact:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+    font-weight: 600;
+}
+
+.home, .about_us, .services, .contact {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-weight: 500;
+    margin: 20px;
+}
+.index-page-main-tag {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    min-height: 30rem;
+    width: 40vw;
+}
+.registration-form{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../public/meeting.jpeg);
+    background-size: cover;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 2rem 2rem;
+}
+.registration-form p{ 
+    text-align: center;
+    line-height: 25px;
+}
+.login-form{
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    flex-direction: column;
+}
+#login-form1{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0 7rem 0;
+}
+.forget-password-btn {
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    padding: 20px;
+}
+#login_btn {
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 3px;
+    background-color: #2196f3;
+    font-size: larger;
+    color: white;
+    cursor: pointer;
+    margin: 2rem 0 0 0;
+}
+#login-form-email{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    height: 30px;
+    width: 100%;
+}
+.form-box{
+    border-bottom: 2px solid black;
+}
+.form-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.icon{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);    
+}
+#login-form-password{
+    background-color: transparent;
+    border:none;
+    outline: none;
+    width: 100%;
+    height: 30px;
+}
+.forget-password-btn:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#login_btn:hover{
+   border: 2px; 
+}
+.click-here-btn {
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 3px;
+    font-size: larger;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.click-here-btn:hover{
+    background-color: transparent;
+    color: white;
+}
+.form-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    padding: 0 35px 0 5px;
+}
+.create_account{
+    background-color: transparent;
+    font-size: medium;
+    border: none;
+}
+.create_account:hover{
+    text-decoration: underline;
+    font-weight: 600;
+}
+.form-box input:focus ~ label,
+.form-box input:valid ~ label {
+    top: -5px;
+   font-weight: 500; 
+}
+@media only screen and (max-width: 768px) {
+    #nav_bar {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home, .about_us, .services, .contact {
+        margin: 10px;
+    }
+
+    .index-page-main-tag {
+        min-height: 60vh;
+    }
+
+    .page-info {
+        width: 80vw;
+    }
+
+    .registration-form,
+    .login-form {
+        width: 100%;
+    }
+}

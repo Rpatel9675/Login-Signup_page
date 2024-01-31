@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body >
+    <div class="index_page">
+        <nav id="nav_bar">
+            <a href="index.html"class="home">Home</a>
+            <a href="#" class="about_us">About us</a>
+            <a href="#" class="services"> Services</a>
+            <a href="https://linktr.ee/Rpatel73" class="contact">Contact us</a>
+        </nav>
+        <main  class="index-page-main-tag">
+            <div class="page-info">
+                <div class="registration-form">
+                    <h1>Welcome</h1>
+                    <p>Join us on the world's largest platform, 
+                        boasting a community of 120 million users. </p>
+                        <form action="http://localhost:8080/signup"><button class="click-here-btn">Click here</button></form> 
+                        <p>to be a part of our global network.</p>
+                </div>
+                <div class="login-form">
+                    <h1>Login</h1>
+                    <span>
+                    <p id="create-account-form">
+                        Don't have an account?
+                        <form action="http://localhost:8080/signup">
+                            <button class="create_account"><b>Signup</b></button>
+                        </form>
+                    </p>
+                </span>
+                    
+                    <form action="http://localhost:8080/login/" method="POST" id="login-form1">
+                        <div class="form-box">
+                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                            <input type="email" required id="login-form-email" name="email">
+                            <label for="login-form-email">Email</label>
+                        </div>
+                        
+                        <div class="form-box">
+                            <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                            <input type="password" required id="login-form-password" name="password">
+                            <label for="login-form-password">password</label>
+                        </div>
+                        <p id="wrong_password" style="color: red;"></p>
+                        <button id="login_btn">Let me in</button>
+                    </form>
+                    <form action="http://localhost:8080/password"><button class="forget-password-btn"> Forget password?</button></form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

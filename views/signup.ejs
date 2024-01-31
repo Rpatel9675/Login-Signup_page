@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="signupstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="index_page">
+        <nav id="nav_bar">
+            <a href="index.html" class="home">Home</a>
+            <a href="#" class="about_us">About us</a>
+            <a href="#" class="services"> Services</a>
+            <a href="https://linktr.ee/Rpatel73" class="contact">Contact us</a>
+        </nav>
+        <div class="container">
+            <h2>Registration Form</h2>
+            <form action="http://localhost:8080/signup/done" method="post">
+                <div class="form-box">
+                    <i class="fa-solid fa-user register"></i>
+                    <input type="text" name="fname" placeholder="First Name" class="name">
+                    <span>
+                        <i class="fa-solid fa-user register"></i>
+                        <input type="text" name="lname" placeholder="Last Name" class="name">
+                    </span>
+                </div>
+                <div class="form-box">
+                    <i class="fa-solid fa-envelope register"></i>
+                    <input type="email" name="email" placeholder="Email" class="email" required>
+                </div>
+                
+                <div class="form-box">
+                    <i class="fa-solid fa-house register"></i>
+                    <input type="text" name="address" class="email" placeholder="Address" required>
+                </div>
+                <div class="form-box">
+                    <i class="fa-solid fa-phone register"></i>
+                    <input type="tel" name="contact" class="email" placeholder="Contact" required pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                </div>
+                <div class="form-box">
+                    <i class="fa-solid fa-pen register"></i>
+                    <input type="text" name="bio" class="email" placeholder="Bio" >
+                </div>
+                <div class="form-box">
+                    <!-- <label >Gender:</label> -->
+                    <input type="radio" name="gender" value="male" class="gender">
+                    <label class="male-radio">Male</label>
+                    <input type="radio" name="gender" value="female" class="gender">
+                    <label>Female</label>
+                </div>
+                <div class="form-box">
+                    <i class="fa-solid fa-lock register"></i>
+                    <input type="password" name="password" class="email" required placeholder="Password">
+                </div>
+                <div class="form-box">
+                    <i class="fa-solid fa-lock register"></i>
+                    <input type="password" name="confirmPassword" class="email" required placeholder="confirm password">
+                </div>
+                <div class="form-box">
+                    <button class="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
