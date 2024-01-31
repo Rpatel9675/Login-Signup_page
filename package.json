@@ -9,10 +9,12 @@
   "author": "Rocky patel",
   "license": "ISC",
   "dependencies": {
+    "@faker-js/faker": "^8.4.0",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "method-override": "^3.0.0",
     "mysql2": "^3.9.0",
-    "nodemon": "^3.0.3"
+    "nodemon": "^3.0.3",
+    "uuid": "^9.0.1"
   }
 }
